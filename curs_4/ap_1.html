@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px black solid;
+            border-collapse: collapse;
+        }
+        
+        
+        table tr td, table tr th{
+            border: 1px black solid;
+            padding: 5px;
+            
+        }
+        table tr:nth-child(2n){
+            color: rgb(183, 101, 6);
+            background-color: bisque;
+        }
+        table tr:nth-child(2n+1){
+            color: rgb(113, 0, 219);
+            background-color: rgb(175, 124, 224);
+        }
+        table tr:first-child{
+            background-color: aqua;
+            color: brown;
+        }
+        table tr:hover{
+            background-color: blue;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>primul meu tabel</h1>
+    <table>
+        <tr>
+            <th>Nume</th>
+            <th>Prenume</th>
+            <th>telefon</th>
+            <th>mail</th>
+        </tr>
+        <tr>
+            <td>Popescu</td>
+            <td>Ion</td>
+            <td>0766666666</td>
+            <td>popescuion@ydemo.ro</td>
+        </tr>
+        <tr>
+            <td>Ionescu</td>
+            <td>Dan</td>
+            <td>0755555555</td>
+            <td>ionescudan@da.ro</td>
+        </tr>
+        <tr>
+            <td>Stan</td>
+            <td>Dan</td>
+            <td>0744444444</td>
+            <td>ionescudan@da.ro</td>
+        </tr>
+        <tr>
+            <td>ivan</td>
+            <td>Dan</td>
+            <td>0733333333</td>
+            <td>ionescudan@da.ro</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

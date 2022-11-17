@@ -1,0 +1,13 @@
+.p1:hover{
+    color: brown;
+}
+.p1_red{
+    color: red;
+    font-size: 50px;
+    
+}
+
+.borderp{
+    padding: 10px 15px 20px 5px;
+    color: brown;
+}

@@ -1,0 +1,23 @@
+p{
+    color: green;
+}
+#p1, #p2{
+    color: red;
+}
+.p_blue{
+    color: blue;
+}
+.pfont{
+    font-size: 35px;
+    color: coral;
+}
+
+div p{
+    color: red
+}
+
+#iddiv #pdiv{
+    color: aqua;
+}    
+ /* daca in id ul(iddiv) avem id ul respectiv (pdiv)  */
+
