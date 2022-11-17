@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General */
 html{ 
     height: 100%;
@@ -388,3 +389,16 @@ html{
   { background: #E5E5DB;
     color: #47433F;
     border-top: 1px solid #ffffff;}
+=======
+ul li{
+    display: inline;
+    margin: 20px;
+    border: 1px #000000 solid;
+    padding: 5px 5px 5px 5px;
+    font-size: 50px;    
+}
+
+header{
+    margin: 0px 0px 0px 100px;
+}
+>>>>>>> f83642dca18aac4ebfbd7ae09d428aab45fbc87a
