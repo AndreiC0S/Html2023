@@ -1,0 +1,169 @@
+/* General */
+html{
+    height: 100%;
+}
+
+*{
+    margin: 10;
+    padding: 10;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    
+    
+}
+/* ACASA */
+
+
+/* Header */
+header{
+    background-image: url(../images/Banner.jpg);
+    background-size: auto;
+    border-bottom: 1px solid #271868;
+    background-position: top;
+    margin: -8px;
+    height: 200px;
+    
+    
+}
+#logo{
+    width: 100%;
+    max-width: 1000px;
+    position: static;
+    height: 220px;
+    margin: auto;
+    
+    
+}
+
+#logo #logo_text{
+    position: absolute;
+    top: -14px;
+    font-size: large;
+    
+}
+#HHH a{
+    text-decoration: none;
+    color: #3d449c;
+    
+}
+
+/* Meniu */
+.meniu{
+    text-align: center;
+    margin-top: 30px;
+    background-color: #3d449c;    
+    padding: 0px 0 0px 0;
+    margin: -35px 0px;    
+}
+
+.meniu ul li{
+    display: inline-block;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: aliceblue;
+    margin: 3px;
+    border: 3px black solid;
+}
+.meniu ul li a:hover{
+    color:  #686666;
+    background: aliceblue;
+
+}
+#meniu a{
+    text-decoration: none;
+    color: #686666;
+    padding: 0 15px 2px 15px;
+}
+
+#meniu li.selected a, li.selected a:hover{
+    
+    background: #686666;
+    color: aliceblue;
+    padding: 0 15px 2px 15px;
+    
+}
+
+/* Main Acasa */
+
+main{
+    background-image: url(../images/background2.jpg);
+    background-size: 31%;
+    background-position: center;
+    margin-top: 35px;
+    border: 1px black solid;
+    
+    
+
+    
+}
+
+.background{
+    background-color: rgba(27, 1, 32, 0.678);
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 689px;
+    
+    
+}
+
+main .float div{
+    
+    max-width:  250px;
+    height: auto ;
+    margin-top: 30px ;
+    margin-left: 50px ;
+    margin-right: 50px;
+    min-width: auto;
+    border: 3px red solid;
+    padding: 0px 15px 0px 5px;
+    float: left;
+    vertical-align:auto;
+    background-color: rgba(250, 235, 215, 0.068);
+    color: orange;
+    
+}
+
+/* PORTOFOLIU */
+
+
+
+
+
+/* Footer */
+#footer{
+    
+    border: 1px black solid;
+    text-align:center;
+    
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: 100%;
+
+    /* incercat mutat Home - Contact - Html - CSS pe locurile din footer */
+    
+}
+#footer p{
+    color: orange;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#footer p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: orange;
+}
+#footer p a:hover{
+    
+    color: rgb(180, 57, 0);
+}
+
+
+    
+
+    
