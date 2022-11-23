@@ -1,0 +1,17 @@
+div{
+    height: 520px;
+    width: 300px;
+    margin: 40px;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+    float: left;
+    overflow: hidden;
+    outline-style:dotted;
+    outline-color: purple;
+    outline-width: 5px;
+    outline-offset: 15px;
+}
+#div2:hover{
+    visibility: hidden;
+}
