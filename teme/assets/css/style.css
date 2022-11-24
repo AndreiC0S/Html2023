@@ -88,6 +88,11 @@ header{
 }
 
 /* Main Acasa */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 main{
     background-image: url(../images/background2.jpg);
@@ -102,10 +107,12 @@ main{
 }
 
 .background{
-    background-color: rgba(27, 1, 32, 0.678);
+    background-color: rgba(204, 181, 209, 0.678);
     margin-left: 25%;
     margin-right: 25%;
-    height: 689px;
+    height: auto;
+    overflow: auto;
+    
     
     
 }
@@ -122,8 +129,8 @@ main .float div{
     padding: 0px 15px 0px 5px;
     float: left;
     vertical-align:auto;
-    background-color: rgba(250, 235, 215, 0.068);
-    color: orange;
+    
+    color: black;
     
 }
 
