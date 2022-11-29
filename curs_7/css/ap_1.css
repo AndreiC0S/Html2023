@@ -1,0 +1,22 @@
+form{
+    /* margin: auto;
+    width: 50%; */
+    text-align: center;
+}
+
+form label{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+    padding: 10px 0 10px 0;
+}
+
+form fieldset {
+    margin: auto;
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+}
+form input {
+    padding: 5px 10px 5px 10px;
+
+}
