@@ -1,0 +1,48 @@
+div{
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+}
+div img{
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+@media (max-width:576px) {
+    /* mobil */
+    .desktop, .tableta{
+        display: none;
+    }
+    .mobil{
+        background-image: url("../images/favicon-16x16.png");
+        background-size: cover;
+        
+    }
+
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    /* tableta */
+    .desktop, .mobil{
+        display:none;
+        
+    }
+    .tableta{
+        background-image: url("../images/header.jpg");
+        background-size: cover;
+    }
+
+}
+
+@media (min-width:769px) {
+    /* desktop */
+    .mobil, .tableta{
+        display: none;
+    }
+    .desktop{
+        background-image: url("../images/coffee1.jpeg");
+        background-size: cover;
+    }
+
+}

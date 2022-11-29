@@ -26,8 +26,9 @@ header {
     height: 210px;
 }
 
-#logo #logo_text {
-    font-size: large;
+#logo #logo_text{
+    text-align: center;
+    font-size: auto;
 }
 
 #head #doc {
@@ -218,6 +219,13 @@ main .float div {
 .formular form input {
     padding: 5px 10px 5px 10px;
 
+}
+body .adresa{
+    text-align: center;
+}
+body .iframe{
+    margin: auto;
+    width: 50%;
 }
 
 /* CONTACT 2 */
