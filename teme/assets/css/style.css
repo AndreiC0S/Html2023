@@ -1,90 +1,89 @@
-/* General */
-html{
+html {
     height: 100%;
-}
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+  }
 
-*{
-    margin: 10;
-    padding: 10;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+body {
     
-    
-}
-/* ACASA */
 
+}
 
 /* Header */
-header{
+header {
     background-image: url(../images/Banner.jpg);
-    background-size: auto;
     border-bottom: 1px solid #271868;
-    background-position: top;
-    margin: -8px;
-    height: 200px;
-    
-    
-}
-#logo{
-    width: 100%;
-    max-width: 1000px;
-    position: static;
-    height: 220px;
-    margin: auto;
-    
-    
+    margin: 0px;
+    height: 210px;
+
+
 }
 
-#logo #logo_text{
-    position: absolute;
-    top: -14px;
-    font-size: large;
-    
+#logo {
+    height: 210px;
 }
-#HHH a{
+
+#logo #logo_text {
+    font-size: large;
+}
+
+#head #doc {
+    margin: 0;
+}
+
+#head a {
     text-decoration: none;
     color: #3d449c;
-    
+
 }
 
 /* Meniu */
-.meniu{
+.meniu {
+    margin-top: 0;
+
     text-align: center;
-    margin-top: 30px;
-    background-color: #3d449c;    
-    padding: 0px 0 0px 0;
-    margin: -35px 0px;    
+    background-color: #3d449c;
+
 }
 
-.meniu ul li{
+
+.meniu ul li {
     display: inline-block;
-    font-style:normal;
+    font-style: normal;
     font-weight: bold;
     font-size: 30px;
     color: aliceblue;
     margin: 3px;
     border: 3px black solid;
 }
-.meniu ul li a:hover{
-    color:  #686666;
+
+.meniu ul li a:hover {
+    color: #686666;
     background: aliceblue;
 
 }
-#meniu a{
+
+#meniu {
+    margin: 0px;
+    padding: 5px 0 5px 0;
+}
+
+#meniu a {
     text-decoration: none;
     color: #686666;
     padding: 0 15px 2px 15px;
 }
 
-#meniu li.selected a, li.selected a:hover{
-    
+#meniu li.selected a,
+li.selected a:hover {
+
     background: #686666;
     color: aliceblue;
     padding: 0 15px 2px 15px;
-    
+
 }
 
 /* Main Acasa */
@@ -92,85 +91,162 @@ header{
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-main{
+main {
     background-image: url(../images/background2.jpg);
     background-size: 31%;
     background-position: center;
-    margin-top: 35px;
     border: 1px black solid;
-    
-    
+    min-height: 611px;
 
-    
+
+
+
+
 }
 
-.background{
-    background-color: rgba(204, 181, 209, 0.678);
-    margin-left: 25%;
-    margin-right: 25%;
+.background {
+    background-color: rgba(241, 241, 241, 0.925);
+    margin: auto;
+    width: 50%;
     height: auto;
+    min-height: 611px;
     overflow: auto;
-    
-    
-    
+
+
+
 }
 
-main .float div{
-    
-    max-width:  250px;
-    height: auto ;
-    margin-top: 30px ;
-    margin-left: 50px ;
+main .float div {
+
+    max-width: 250px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 50px;
     margin-right: 50px;
     min-width: auto;
     border: 3px red solid;
     padding: 0px 15px 0px 5px;
     float: left;
-    vertical-align:auto;
-    
+    vertical-align: auto;
+
     color: black;
-    
+
 }
 
 /* PORTOFOLIU */
 
+/* BLOG */
+.tabel h1{
+    border-bottom: #2604c0 3px solid;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 70px;
+    margin: auto;
+    width: 50%;
+}
 
-
-
-
-/* Footer */
-#footer{
-    
-    border: 1px black solid;
-    text-align:center;
-    
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: 100%;
-
-    /* incercat mutat Home - Contact - Html - CSS pe locurile din footer */
+.tabel table{
+    border: 2px black solid;
+    border-collapse: collapse;
+    margin:auto;
     
 }
-#footer p{
+.tabel table tr td, table tr th{
+    border: 2px black solid;
+    padding: 5px;
+}
+
+.tabel table tr:nth-child(2n){
+    color: aquamarine;
+    background-color: #2604c0;
+}
+.tabel table tr:nth-child(2n+1){
+    color: aquamarine;
+    background-color: #420202;
+}
+.tabel table tr:first-child{
+    color: wheat;
+    background-color: black;
+}
+
+.tabel table tr:hover{
+    color: wheat;
+    background-color: black;
+}
+
+
+
+
+
+
+/* CONTACT */
+.formular .trimite_mesaj {
+
+    margin: auto;
+    width: 50%;
+}
+
+.trimite_mesaj h1 {
+
+    border-bottom: #c41818 3px solid;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.formular form {
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.formular form label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding: 10px 0 10px 0;
+}
+
+.formular form fieldset {
+    margin: auto;
+    width: 25%;
+    padding: 20px 10px 20px 10px;
+}
+
+.formular form input {
+    padding: 5px 10px 5px 10px;
+
+}
+
+/* CONTACT 2 */
+
+/* Footer */
+#footer {
+
+    border: 1px black solid;
+    text-align: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#footer p {
     color: orange;
     margin-bottom: 0px;
     margin-top: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-#footer p a{
+#footer p a {
     text-decoration: none;
     font-weight: bold;
     color: orange;
 }
-#footer p a:hover{
-    
+
+#footer p a:hover {
+
     color: rgb(180, 57, 0);
 }
-
-
-    
-
-    
