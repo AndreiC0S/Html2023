@@ -1,0 +1,53 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(112, 8, 91, 1) 15%,
+    rgba(114, 36, 84, 1) 80%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.formular {
+    background-color: aliceblue;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    color: red;  
+    border: 3px black solid;
+    box-shadow: 0 0 20px black;
+    
+}
+
+.formular h1{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.formular form input,textarea{
+    display: inline-block;
+    margin: 10px;
+    padding:10px;
+    width:250px;
+    
+} 
+.formular .submit{
+    background-color: blue;
+    color: aliceblue;
+}
+input:valid, textarea:valid{
+    border-color: green;
+}
+input:invalid, textarea:invalid{
+    border-color: red;
+}
+
+
+
+
+
+
+
+
