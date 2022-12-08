@@ -154,7 +154,7 @@ main .float .float_right {
 }
 
 .background_acasa {
-
+    
     background-color: rgba(241, 241, 241, 0.925);
     height: 100%;
     /* min-height: 611px; */
@@ -432,11 +432,11 @@ body .iframe {
     background-repeat: no-repeat;
     background-size: 100%;
     /* overflow: auto; */
-
+    
 }
 
 #footer p {
-
+    
     color: rgb(0, 0, 0);
     margin-bottom: 0px;
     margin-top: 10px;
