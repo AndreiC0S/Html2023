@@ -1,15 +1,16 @@
 html {
     height: 100%;
-  }
-  
+}
+
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
 body {
-    
-
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -18,15 +19,13 @@ header {
     border-bottom: 1px solid #271868;
     margin: 0px;
     height: 210px;
-
-
 }
 
 #logo {
     height: 210px;
 }
 
-#logo #logo_text{
+#logo #logo_text {
     text-align: center;
     font-size: auto;
 }
@@ -41,30 +40,26 @@ header {
 
 }
 
-
 /* Meniu */
 .meniu {
     margin-top: 0;
-
     text-align: center;
-    background-color: #3d449c;
+    background-color: #400879fd;
 
 }
-
 
 .meniu ul li {
     display: inline-block;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    color: aliceblue;
     margin: 3px;
-    border: 3px black solid;
+    /* border: 3px black solid; */
 }
 
 .meniu ul li a:hover {
-    color: #686666;
-    background: aliceblue;
+    color: #918e8e;
+    background: rgba(240, 248, 255, 0.192);
 
 }
 
@@ -75,18 +70,25 @@ header {
 
 #meniu a {
     text-decoration: none;
-    color: #686666;
+    color: #f1f1f1;
     padding: 0 15px 2px 15px;
 }
 
 #meniu li.selected a,
 li.selected a:hover {
-
-    background: #686666;
-    color: aliceblue;
+    background: #6866666e;
+    color: #f7f7f7;
     padding: 0 15px 2px 15px;
+    animation: text 5s ease-in-out infinite;
+}
+
+@keyframes text {
+    50% {
+        color: red;
+    }
 
 }
+
 
 /* Main Acasa */
 .clearfix::after {
@@ -100,27 +102,90 @@ main {
     background-size: 31%;
     background-position: center;
     border: 1px black solid;
-    min-height: 611px;
-
-
-
-
+    overflow: auto;
+    flex-grow: 1;
 
 }
 
 .background {
     background-color: rgba(241, 241, 241, 0.925);
+    height: 100%;
+    min-height: 611px;
     margin: auto;
     width: 50%;
-    height: auto;
-    min-height: 611px;
     overflow: auto;
+}
 
+main .float {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+main .float .float_left {
+    display: inline-block;
+    max-width: 250px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: auto;
+    border: 3px red solid;
+    padding: 0px 15px 0px 5px;
+    vertical-align: auto;
+}
+
+main .float .float_right {
+    display: inline-block;
+    max-width: 250px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: auto;
+    border: 3px red solid;
+    padding: 0px 15px 0px 5px;
+    vertical-align: auto;
+}
+
+.position {
+    margin-left: 20%;
+    height: 100%;
+}
+
+.background_acasa {
+
+    background-color: rgba(241, 241, 241, 0.925);
+    height: 100%;
+    /* min-height: 611px; */
+    width: 50%;
+    overflow: auto;
+}
+
+.sidebar_container {
+    float: left;
+    width: 100%;
+    max-width: 200px;
+    border: 1px rgb(9, 8, 10) solid;
+    background-color: rgba(128, 128, 128, 0.925);
 
 }
 
-main .float div {
+.sidebar h1 {
+    text-align: center;
+}
+
+.sidebar ol {
+    text-align: center;
+    list-style-position: inside;
+
+}
+
+
+
+
+
+/* main .float div {
 
     max-width: 250px;
     height: auto;
@@ -132,48 +197,172 @@ main .float div {
     padding: 0px 15px 0px 5px;
     float: left;
     vertical-align: auto;
-
     color: black;
 
-}
+} */
+
+
 
 /* PORTOFOLIU */
+/* Produs 1 */
+.produs_1 {
+    margin: 10px;
+
+}
+
+.produs_1 strong {
+    border-bottom: #c41818 3px solid;
+    display: inline-flex;
+    margin-bottom: 10px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.produs_1 .img {
+    background-image: url(../images/cafea.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    border: black 3px solid;
+    border-radius: 10px;
+}
+
+.produs_1 p {
+    font-size: large;
+    font-style: italic;
+
+}
+
+/* Produs 2 */
+.produs_2 {
+    display: inline-block;
+    margin: 10px 10px 10px 2px;
+    border: #2604c0 5px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.produs_2 strong {
+    border-bottom: #c41818 3px solid;
+    display: inline-flex;
+    margin-bottom: 10px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa
+}
+
+.produs_2 .img {
+    background-image: url(../images/cafea.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    border: black 3px solid;
+    border-radius: 10px;
+}
+
+.produs_2 p {
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Produs_3 */
+
+.produs_3 {
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.produs_3 strong {
+    border-bottom: #c41818 3px solid;
+    display: inline-flex;
+    margin-bottom: 10px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa
+}
+
+
+
+
+.produs_3 img {
+    height: 150px;
+    width: 200px;
+    float: left;
+    border: black 3px solid;
+    border-radius: 10px;
+
+}
+
+.produs_3 p {
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 210px;
+    border-top: #2604c0 3px solid;
+    border-right: #2604c0 3px solid;
+    border-bottom: #2604c0 3px solid;
+    padding: 15px;
+
+}
+
+
+
+
+
 
 /* BLOG */
-.tabel h1{
+.tabel h1 {
     border-bottom: #2604c0 3px solid;
     text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 70px;
     margin: auto;
     width: 50%;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa
 }
 
-.tabel table{
+.tabel table {
     border: 2px black solid;
     border-collapse: collapse;
-    margin:auto;
-    
+    margin: auto;
+
 }
-.tabel table tr td, table tr th{
+
+.tabel table tr td,
+table tr th {
     border: 2px black solid;
     padding: 5px;
 }
 
-.tabel table tr:nth-child(2n){
+.tabel table tr:nth-child(2n) {
     color: aquamarine;
     background-color: #2604c0;
 }
-.tabel table tr:nth-child(2n+1){
+
+.tabel table tr:nth-child(2n+1) {
     color: aquamarine;
     background-color: #420202;
 }
-.tabel table tr:first-child{
+
+.tabel table tr:first-child {
     color: wheat;
     background-color: black;
 }
 
-.tabel table tr:hover{
+.tabel table tr:hover {
     color: wheat;
     background-color: black;
 }
@@ -194,7 +383,9 @@ main .float div {
 
     border-bottom: #c41818 3px solid;
     text-align: center;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa
 }
 
 .formular form {
@@ -204,11 +395,11 @@ main .float div {
 }
 
 .formular form label {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
     width: 100px;
     text-align: right;
     padding: 10px 0 10px 0;
+    font-family: 'Zen Dots', cursive;
 }
 
 .formular form fieldset {
@@ -221,10 +412,12 @@ main .float div {
     padding: 5px 10px 5px 10px;
 
 }
-body .adresa{
+
+body .adresa {
     text-align: center;
 }
-body .iframe{
+
+body .iframe {
     margin: auto;
     width: 50%;
 }
@@ -233,29 +426,34 @@ body .iframe{
 
 /* Footer */
 #footer {
-
     border: 1px black solid;
     text-align: center;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    /* overflow: auto; */
+
 }
 
 #footer p {
-    color: orange;
+
+    color: rgb(0, 0, 0);
     margin-bottom: 0px;
     margin-top: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px;
+    text-shadow: 4px 4px 4px #aaa;
+
+    min-height: 20.5px;
 }
 
 #footer p a {
     text-decoration: none;
     font-weight: bold;
-    color: orange;
+    color: rgb(0, 0, 0);
 }
 
 #footer p a:hover {
 
-    color: rgb(180, 57, 0);
+    color: rgb(70, 22, 158);
 }
